@@ -1,0 +1,75 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    border: 2px solid rgb(0, 0, 255);
+    background-color: rgb(0, 0, 255);
+    color: black;
+    padding: 1%;
+}
+
+.menu-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-horizontal .logo {
+    height: 50px;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.contenedor1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pie {
+    text-align: center;
+    border: 2px solid rgb(0, 140, 255);
+    background-color: rgb(0, 140, 255);
+    color: black;
+    padding: 10px;
+}
+
+.pie a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}

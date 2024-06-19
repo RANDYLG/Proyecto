@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="icon" href="../img/IUB.png">
+    <link rel="stylesheet" href="../css/registrarce.css">
+</head>
+<body>
+    <div class="registrarce-container">
+        <div class="logo">
+            <img src="../img/logo2.png" alt="Logo">
+        </div>
+        <form class="registrarce-form" id="registrarceForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Contraseña">
+            <label for="tipoUsuario">Tipo de Usuario</label>
+            <select id="tipoUsuario" name="tipoUsuario">
+                <option value="">Selecciona Tipo de Usuario</option>
+                <option value="empresa">Empresa</option>
+                <option value="estudiante">Estudiante</option>
+            </select>
+            <label for="usuario">Usuario</label>
+            <input type="email" id="usuario" name="usuario" placeholder="Usuario" readonly>
+            <button type="button" id="registrarBtn">Registrar</button><br>
+            <button type="button" id="regresarBtn">Regresar</button>
+            <span>¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></span>
+        </form>
+    </div>
+    <script src="../js/registrarce.js"></script>
+</body>
+</html>
+

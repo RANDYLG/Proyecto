@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/IUB.png">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/pgnUsuarios.css">
+</head>
+<body>
+    <header>
+        <div class="menu-horizontal1">
+            <!-- primer menu -->
+            <span id="nombreUsuario" class="nombre-usuario"></span>
+            <button class="button" id="logoutBtn">Cerrar Sesión</button>
+        </div><br>
+        <div class="menu-horizontal2">
+            <!-- segundo menu -->
+            <button class="button" id="profileBtn">Perfil</button>
+            <button class="button" id="offersBtn">Ver Ofertas</button>
+        </div>
+    </header>
+    <main class="perfil">
+        <!-- Formulario de Hoja de Vida -->
+        <h2>Formulario de Hoja de Vida</h2>
+        <form id="perfilForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>Nombre completo:</label>
+                <input type="text" id="nombreCompleto"><br>
+                <label>Edad:</label>
+                <input type="number" id="edad"><br>
+                <label>Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento"><br>
+                <label>Género:</label>
+                <select id="genero">
+                    <option value="">Seleccione</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otros">Otros</option>
+                </select><br>
+                <label>Correo:</label>
+                <input type="email" id="correo"><br>
+                <label>Teléfono:</label>
+                <input type="tel" id="telefono"><br>
+                <label>Dirección:</label>
+                <input type="text" id="direccion"><br>
+                <label>Carné de conducir:</label>
+                <input type="text" id="carneConducir"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Perfil Estudiante</legend>
+                <label>Descripción:</label>
+                <textarea id="descripcion"></textarea><br>
+            </fieldset>
+            <fieldset id="formacionFieldset">
+                <legend>Formación</legend>
+                <label>Formación:</label>
+                <select class="formacion">
+                    <option value="">Seleccione</option>
+                    <option value="Bachiller">Bachiller</option>
+                    <option value="Técnico">Técnico</option>
+                </select><br>
+                <label>Institución:</label>
+                <input type="text" class="institucion"><br>
+                <label>Localidad:</label>
+                <input type="text" class="localidad"><br>
+                <label>Fecha de inicio:</label>
+                <input type="date" class="fechaInicio"><br>
+                <label>Fecha de fin:</label>
+                <input type="date" class="fechaFin"><br>
+                <label>Aún presente:</label>
+                <input type="checkbox" class="aunPresente"><br>
+                <button type="button" onclick="agregarFormacion()">Agregar otra formación</button><br>
+            </fieldset>
+            <fieldset id="experienciaFieldset">
+                <legend>Experiencia</legend>
+                <label>Puesto:</label>
+                <input type="text" class="puesto"><br>
+                <label>Empresa:</label>
+                <input type="text" class="empresa"><br>
+                <label>Localidad:</label>
+                <input type="text" class="localidadExp"><br>
+                <label>Fecha de inicio:</label>
+                <input type="date" class="fechaInicioExp"><br>
+                <label>Fecha de fin:</label>
+                <input type="date" class="fechaFinExp"><br>
+                <label>Aún presente:</label>
+                <input type="checkbox" class="aunPresenteExp"><br>
+                <label>Descripción:</label>
+                <textarea class="descripcionExp"></textarea><br>
+                <button type="button" onclick="agregarExperiencia()">Agregar otra experiencia</button><br>
+            </fieldset>
+            <fieldset id="competenciasFieldset">
+                <legend>Competencias</legend>
+                <label>Competencia:</label>
+                <input type="text" class="competencia"><br>
+                <label>Nivel:</label>
+                <select class="nivelCompetencia">
+                    <option value="">Seleccione</option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Nativo">Nativo</option>
+                </select><br>
+                <button type="button" onclick="agregarCompetencia()">Agregar otra competencia</button><br>
+            </fieldset>
+            <fieldset id="idiomasFieldset">
+                <legend>Idiomas</legend>
+                <label>Idioma:</label>
+                <input type="text" class="idioma"><br>
+                <label>Nivel:</label>
+                <select class="nivelIdioma">
+                    <option value="">Seleccione</option>
+                    <option value="Bajo">Bajo</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Nativo">Nativo</option>
+                </select><br>
+                <button type="button" onclick="agregarIdioma()">Agregar otro idioma</button><br>
+            </fieldset>
+            <fieldset>
+                <legend>Pasa tiempos</legend>
+                <label>Pasatiempos:</label>
+                <textarea id="pasatiempos"></textarea><br>
+            </fieldset>
+            <fieldset id="referenciasFieldset">
+                <legend>Referencias</legend>
+                <label>Nombre:</label>
+                <input type="text" class="nombreReferencia"><br>
+                <label>Empresa:</label>
+                <input type="text" class="empresaReferencia"><br>
+                <label>Localidad:</label>
+                <input type="text" class="localidadReferencia"><br>
+                <label>Teléfono:</label>
+                <input type="tel" class="telefonoReferencia"><br>
+                <label>Correo:</label>
+                <input type="email" class="correoReferencia"><br>
+                <button type="button" onclick="agregarReferencia()">Agregar otra referencia</button><br>
+            </fieldset>
+            <button type="button" onclick="guardarFormulario()">Guardar</button>
+        </form>
+    </main>
+    <div class="pie">
+        <!-- pie de pagina -->
+        <a href="https://www.unibarranquilla.edu.co/">Unibarranquilla</a> | 
+        <a href="https://www.unibarranquilla.edu.co/academia/portales-academicos/practicas-profesionales">Practicas Profecionales</a> | 
+        <a href="link3.html">PQRSD</a>
+    </div>
+    <script src="../js/pgnUsuarios.js"></script>
+</body>
+</html>
+

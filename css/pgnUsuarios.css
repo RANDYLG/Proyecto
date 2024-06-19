@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    border: 2px solid rgb(0, 119, 255);
+    background-color: rgb(0, 119, 255);
+    color: black;
+    padding: 1%;
+}
+
+.menu-horizontal1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-horizontal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.nombre-usuario {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.perfil {
+    padding: 2%;
+    margin: auto;
+    width: 60%;
+}
+
+.perfil form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.perfil h2{
+    justify-content: center;   
+}
+
+.perfil fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.perfil legend {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.perfil label {
+    display: block;
+    margin-top: 10px;
+}
+
+.perfil input, .perfil select, .perfil textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pie {
+    text-align: center;
+    border: 2px solid rgb(0, 140, 255);
+    background-color: rgb(0, 140, 255);
+    color: black;
+    padding: 10px;
+}
+
+.pie a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}

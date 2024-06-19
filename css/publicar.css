@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.5cm;
+}
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5cm;
+}
+.logo{
+    text-align: center;
+    font-size: 3cm;
+}
+.contenedordetodo{
+    box-shadow: 7px 13px 37px #000;
+}
+.contenedordetodo > * {
+    padding: 1em;
+}
+.contenedordelapropuesta{
+    background: rgb(255, 255, 255);
+}
+.contenedordelapropuesta{
+    margin: 0;
+    padding: 1em;
+}
+.contenedordelapropuesta form button,
+.contenedordelapropuesta form input,
+.contenedordelapropuesta form textarea{
+    width: 100%;
+    padding: .7cm;
+    border: none;
+    color: #000;
+}
+.contenedordelapropuesta form button{
+    background: rgb(98, 196, 158);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1cm;
+}
+.contenedordelapropuesta form button:hover,
+.contenedordelapropuesta form button:focus{
+    background: #246360;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+.definicion{
+    background: rgb(82, 150, 124);
+}
+
+.definicion h4,
+.definicion ul,
+.definicion p{
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+.definicion ul{
+    list-style: note;
+    padding: 0;
+}
+.definicion ul li{
+    padding: 3em;
+}
+/*Para pc*/
+@media(min-width: 700px){
+    body{
+        padding: 0 4rem;
+    }
+    .contenedordetodo{
+        display: grid;
+        grid-auto-columns: 2fr 1fr;
+    }
+    .contenedordetodo > *{
+        padding: 2em;
+    }
+    .definicion h4,
+    .definicion ul,
+    .definicion p{
+        padding: 1em;
+        text-align: left;
+    }
+}

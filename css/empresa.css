@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #F00;
+    color: #FFF;
+    padding: 20px 0;
+    
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+     align-items: center;
+}
+.Logo{
+    height: 40px;
+}
+.logo{
+    height: 40px;
+}
+.em{
+    height: 70px;
+    
+}
+h1, h2 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-sm-4 {
+    width: 33.33%;
+    padding: 15px;
+}
+.col-sm-4 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.menu-horizontal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu li {
+    margin-right: 25px;
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.menu a {
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: bold;
+    
+}
+.pie {
+    text-align: center;
+    align-items: center;
+    border: 2px solid #333;
+    background-color: #333;
+    color: black;
+    padding: 10px;
+}
+.pie a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    align-items: center;
+}
+.pie a:hover {
+    text-decoration: underline;
+    align-items: center;
+}
